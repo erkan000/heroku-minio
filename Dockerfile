@@ -1,3 +1,3 @@
 FROM minio/minio:edge
 
-CMD [ "server", "/data"]
+CMD [ "server", "/data", "--address", $PORT]
