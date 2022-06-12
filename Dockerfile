@@ -1,3 +1,5 @@
 FROM minio/minio:edge
 
-CMD [ "minio", "server", "/data", "--address", $PORT]
+ENTRYPOINT ["minio"]
+
+CMD ["server", "/data", "--address", $PORT]
